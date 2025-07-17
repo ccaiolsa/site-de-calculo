@@ -11,7 +11,7 @@
     
     <section class="calculadora">  
 
-        <form id="calculadora-form">
+        <!-- <form id="calculadora-form">
             <label for="numero1"> Primeiro número </label>
             <input type="number" id="numero1" name="numero1" required>
 
@@ -28,7 +28,30 @@
             <p class="mensagem2"></p>
 
             <label for="resultado"> Resultado </label>
-            <input type="text" id="resultado" name="resultado" readonly>
+            <input type="text" id="resultado" name="resultado" readonly>-->
+        <form id="calculadora-digital">
+
+            <input type="number" id="numero3" name="numero3" readonly>
+            <section class="numeros">
+                <button class="teclado-num"> 1 </button>
+                <button class="teclado-num"> 2 </button>
+                <button class="teclado-num"> 3 </button>
+                <button class="teclado-num"> 4 </button>
+                <button class="teclado-num"> 5 </button>
+                <button class="teclado-num"> 6 </button>
+                <button class="teclado-num"> 7 </button>
+                <button class="teclado-num"> 8 </button>
+                <button class="teclado-num"> 9 </button>
+                <button class="teclado-num"> 0 </button>
+            </section>
+            <section class="operadores">
+                <button class="teclado-op"> / </button>
+                <button class="teclado-op"> x </button>
+                <button class="teclado-op"> - </button>
+                <button class="teclado-op"> + </button>
+            </section>
+                
+                
             <section>   
                 <button type="submit" class="submissao" disabled> Calcular </button>
             <button class="estilo" onclick="novaCalculadora()">
