@@ -126,14 +126,97 @@ h1{
 }*/
 
 #calculadora-digital{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 1.5rem;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    border: none;
+    border: 1px solid white;
     border-radius: 12px;
+}
+#calculadora-digital input{
+    display: block;
+    width: 90vh;
+    height: 10%;
+    margin: 0 auto;
+}
+#calculadora-digital .conteúdo-calculadora{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+#calculadora-digital .numeros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80%;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+}
+#calculadora-digital .numeros button, #calculadora-digital .operadores button {
+    display: block;
+    padding: 24px;
+    margin: 0;
+    font-size: 24px;
+}
+#calculadora-digital .operadores{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 17%;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+}
+#calculadora-digital section .submissao:disabled{
+    background-color: #5a5959;
+    cursor: not-allowed;
+}
+
+#calculadora-digital .iteracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculadora-digital section .submissao{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    width: 77%;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #0072ff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#calculadora-digital section .submissao:hover{
+    background-color: #650aa1;
+}
+#calculadora-digital section .estilo{
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #011b3a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 20%;
+}
+#calculadora-digital section .estilo img{
+    width: 24px;
+    height: auto;
+}
+#calculadora-digital section .estilo:hover{
+    background-color: #005bb5;
+    border: 1px solid #004080;
+    transition: scaleY(1.05);
 }

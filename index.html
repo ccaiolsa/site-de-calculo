@@ -32,31 +32,33 @@
         <form id="calculadora-digital">
 
             <input type="number" id="numero3" name="numero3" readonly>
-            <section class="numeros">
-                <button class="teclado-num"> 1 </button>
-                <button class="teclado-num"> 2 </button>
-                <button class="teclado-num"> 3 </button>
-                <button class="teclado-num"> 4 </button>
-                <button class="teclado-num"> 5 </button>
-                <button class="teclado-num"> 6 </button>
-                <button class="teclado-num"> 7 </button>
-                <button class="teclado-num"> 8 </button>
-                <button class="teclado-num"> 9 </button>
-                <button class="teclado-num"> 0 </button>
-            </section>
-            <section class="operadores">
-                <button class="teclado-op"> / </button>
-                <button class="teclado-op"> x </button>
-                <button class="teclado-op"> - </button>
-                <button class="teclado-op"> + </button>
-            </section>
+            <div class="conteúdo-calculadora">
+                <section class="numeros">
+                    <button class="teclado-num"> 1 </button>
+                    <button class="teclado-num"> 2 </button>
+                    <button class="teclado-num"> 3 </button>
+                    <button class="teclado-num"> 4 </button>
+                    <button class="teclado-num"> 5 </button>
+                    <button class="teclado-num"> 6 </button>
+                    <button class="teclado-num"> 7 </button>
+                    <button class="teclado-num"> 8 </button>
+                    <button class="teclado-num"> 9 </button>
+                    <button class="teclado-num"> 0 </button>
+                </section>
+                <section class="operadores">
+                    <button class="teclado-op"> / </button>
+                    <button class="teclado-op"> x </button>
+                    <button class="teclado-op"> - </button>
+                    <button class="teclado-op"> + </button>
+                </section>
+            </div>
                 
                 
-            <section>   
+            <section class="iteracao">   
                 <button type="submit" class="submissao" disabled> Calcular </button>
-            <button class="estilo" onclick="novaCalculadora()">
-            <img src="C:\Users\ccaio\Documents\repositorio\Cypress-teste\Sites-teste\site-de-calculo\ícones\grid-icon.svg" alt="calculadora digital">
-            </button>
+                <button class="estilo" onclick="novaCalculadora()">
+                    <img src="C:\Users\ccaio\Documents\repositorio\Cypress-teste\Sites-teste\site-de-calculo\ícones\formulario-dinamico.svg">
+                </button>
             </section>
         </form>
     </section>
