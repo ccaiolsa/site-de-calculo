@@ -25,14 +25,14 @@ h1{
     margin: 0 auto;
 }
 
-/*#calculadora-form{
+#calculadora-form{
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     height: 100%;
     padding: 1.5rem;
     background-color: rgb(181, 172, 235);
-    display: flex;
-    flex-direction: column;
     border: none;
     border-radius: 12px;
 }
@@ -82,11 +82,11 @@ h1{
     display: flex;
     justify-content: center;
 }
-#calculadora-form section .submissao:disabled{
+#calculadora-form section .submissao1:disabled{
     background-color: #5a5959;
     cursor: not-allowed;
 }
-#calculadora-form section .submissao{
+#calculadora-form section .submissao1{
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-top: 2rem;
@@ -100,7 +100,7 @@ h1{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-#calculadora-form section .submissao:hover{
+#calculadora-form section .submissao1:hover{
     background-color: #650aa1;
 }
 #calculadora-form section .estilo{
@@ -123,15 +123,15 @@ h1{
     background-color: #005bb5;
     border: 1px solid #004080;
     transition: scaleY(1.05);
-}*/
+}
 
 #calculadora-digital{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 1.5rem;
-    background-color: black;
+    background-color: rgb(181, 172, 235);
     border: 1px solid white;
     border-radius: 12px;
 }
@@ -158,9 +158,15 @@ h1{
 }
 #calculadora-digital .numeros button, #calculadora-digital .operadores button {
     display: block;
+    border: 1px solid #d6d9f3;
     padding: 24px;
     margin: 0;
+    color: rgb(20, 11, 82);
     font-size: 24px;
+}
+.numeros button:hover, .operadores button:hover{
+    border: 1px solid #004080;
+    background-color: #9da6f7;
 }
 #calculadora-digital .operadores{
     display: grid;
@@ -171,7 +177,7 @@ h1{
     padding: 0;
     margin: 0;
 }
-#calculadora-digital section .submissao:disabled{
+#calculadora-digital section .submissao2:disabled{
     background-color: #5a5959;
     cursor: not-allowed;
 }
@@ -182,7 +188,7 @@ h1{
     align-items: center;
 }
 
-#calculadora-digital section .submissao{
+#calculadora-digital section .submissao2{
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-top: 2rem;
@@ -196,7 +202,7 @@ h1{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-#calculadora-digital section .submissao:hover{
+#calculadora-digital section .submissao2:hover{
     background-color: #650aa1;
 }
 #calculadora-digital section .estilo{
