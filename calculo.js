@@ -32,10 +32,12 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         document.querySelector("#resultado").value = resultado;
     })
+    const digital = document.getElementById('calculadora-digital');
     const estilo = document.querySelector('.estilo');
     estilo.addEventListener('click', function(event){
         event.preventDefault();
-            document.querySelector("#calculadora-form").style.display = 'none';
-            document.querySelector("#calculadora-digital").style.display = 'flex';
-        })
+        form.style.display = 'none';
+        digital.style.display = 'flex';
+
     })
+})
