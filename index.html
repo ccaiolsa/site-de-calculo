@@ -37,43 +37,39 @@
                     <img src="C:\Users\ccaio\Documents\repositorio\Cypress-teste\Sites-teste\site-de-calculo\ícones\grid-icon.svg">
                 </button>
             </section>
-        </form>
-
+        </form>    
         <!-- ---------------HTML CALCULADORA DIGITAL----------------->
-        <form id="calculadora-digital">
-
-            <input type="number" id="numero3" name="numero3" readonly>
-            <div class="conteúdo-calculadora">
-                <section class="numeros">
-                    <button class="teclado-num"> 1 </button>
-                    <button class="teclado-num"> 2 </button>
-                    <button class="teclado-num"> 3 </button>
-                    <button class="teclado-num"> 4 </button>
-                    <button class="teclado-num"> 5 </button>
-                    <button class="teclado-num"> 6 </button>
-                    <button class="teclado-num"> 7 </button>
-                    <button class="teclado-num"> 8 </button>
-                    <button class="teclado-num"> 9 </button>
-                    <button class="teclado-num"> 0 </button>
-                </section>
-                <section class="operadores">
-                    <button class="teclado-op"> / </button>
-                    <button class="teclado-op"> x </button>
-                    <button class="teclado-op"> - </button>
-                    <button class="teclado-op"> + </button>
-                </section>
-            </div>
-                
+                <div id='calculadora-digital'>
+                    <input id="display" readonly>
+                    <div id="chaves">
+                        <button onclick="apresentar('+')">+</button>
+                        <button onclick="apresentar('7')">7</button>
+                        <button onclick="apresentar('8')">8</button>
+                        <button onclick="apresentar('9')">9</button>
+                        <button onclick="apresentar('-')">-</button>
+                        <button onclick="apresentar('4')">4</button>
+                        <button onclick="apresentar('5')">5</button>
+                        <button onclick="apresentar('6')">6</button>
+                        <button onclick="apresentar('*')">*</button>
+                        <button onclick="apresentar('1')">1</button>
+                        <button onclick="apresentar('2')">2</button>
+                        <button onclick="apresentar('3')">3</button>
+                        <button onclick="apresentar('/')">/</button>
+                        <button onclick="apresentar('.')">.</button>
+                        <button onclick="apresentar('=')">=</button>
+                        <button onclick="limpar()">C</button>
+                        
+                    </div>
+                    <div class="iteracao">   
+                        <button onclick="resultado()"></button>
+                        <button class="estilo">
+                            <img src="C:\Users\ccaio\Documents\repositorio\Cypress-teste\Sites-teste\site-de-calculo\ícones\formulario-dinamico.svg">
+                        </button>
+                    </div>
+                    
+                </div>        
             <!-- --------- BOTÕES DE SUBMISSÃO E TROCA---------->    
-            <section class="iteracao">   
-                <button type="submit" class="submissao2" disabled> Calcular </button>
-                <button class="estilo">
-                    <img src="C:\Users\ccaio\Documents\repositorio\Cypress-teste\Sites-teste\site-de-calculo\ícones\formulario-dinamico.svg">
-                </button>
-
-
-            </section>
-        </form>
+            
     </section>
 
 <script src="calculo.js"></script>
